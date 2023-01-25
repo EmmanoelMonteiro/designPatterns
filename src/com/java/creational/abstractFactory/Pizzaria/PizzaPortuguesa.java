@@ -1,15 +1,13 @@
 package com.java.creational.abstractFactory.Pizzaria;
 
-public class PizzaQuatroQueijos extends Pizza {
-
+public class PizzaPortuguesa extends Pizza {
     private PizzaIngredientesFactory ingredientes;
     private String massa;
     private String queijo;
     private String molho;
-    private String salsa;
-    private String tomate;
+    private String ovos;
 
-    public PizzaQuatroQueijos( PizzaIngredientesFactory ingredientes){
+    public PizzaPortuguesa( PizzaIngredientesFactory ingredientes){
         this.ingredientes = ingredientes;
         this.prepara();
     }
@@ -20,11 +18,10 @@ public class PizzaQuatroQueijos extends Pizza {
     	massa = ingredientes.criarMassa();
     	queijo = ingredientes.criarQueijo();
     	molho = ingredientes.criarMolho();
-    	salsa = ingredientes.criarSalsa();
-    	tomate = ingredientes.criarTomates();
+    	ovos = ingredientes.criarOvos();
     	
     	System.out.println("Descrição ========================");
-    	System.out.println(massa+" "+queijo+" "+molho+" "+salsa+" "+tomate);
+    	System.out.println(massa+" "+queijo+" "+molho+" "+ovos);
     	System.out.println("==================================");
     }
 }

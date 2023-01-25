@@ -1,17 +1,20 @@
 package com.java.creational.abstractFactory.Pizzaria;
 
-public class Pizza {
-	
-	public void preparar() {
-		System.out.println("Preparando Pizza...");
-	}
+public abstract class Pizza {
+    
+    public void prepara(){
+    	System.out.println("Preparando Pizza...");
+		System.out.println("==================================");
+    }
 	
 	public void assar() {
 		System.out.println("Assando Pizza...");
+		System.out.println("==================================");
 	}
 	
 	public void empacotar() {
 		System.out.println("Empacotando Pizza...");
+		System.out.println("==================================");
 	}
 
 }

@@ -9,7 +9,12 @@ public class TestePizzaria {
 		//pizza.empacotar();
 		
 		Pizzaria pizzaria = new Pizzaria();
+		
 		pizzaria.criarPizza("sao-paulo2", "queijo");
+		System.out.println(" ");
+		
+		pizzaria.criarPizza("sao-paulo", "portuguesa");
+		System.out.println(" ");
 
 	}
 }

@@ -1,6 +1,7 @@
 package com.java.creational.abstractFactory.Pizzaria;
 
 public class SPPizzaIngredientesFactory extends PizzaIngredientesFactory {
+	
 	@Override
     public String criarMassa(){
         return "> Massa Grossa";
@@ -19,5 +20,15 @@ public class SPPizzaIngredientesFactory extends PizzaIngredientesFactory {
     @Override
     public String criarSalsa(){
     	 return "> Salsa Nobre";
+    }
+    
+    @Override
+    public String criarOvos(){
+    	return "> Ovos de pato";
+    }
+    
+    @Override
+    public String criarTomates(){
+    	return "> Tomate";
     }
 }

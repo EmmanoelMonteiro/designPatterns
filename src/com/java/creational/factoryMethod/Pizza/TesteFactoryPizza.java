@@ -4,17 +4,22 @@ public class TesteFactoryPizza {
 	public static void main(String args[]) {
 		FactoryPizza factory = new FactoryPizza();
 		
-		String nome;
-		String tamanho;
+		Pizza pizza1 = factory.getPizza("Portuguesa", "M");
+		pizza1.assar();
+		pizza1.empacotar();
 		
-		nome = "Portuguesa";
-		tamanho = "M";
+		System.out.println(" ");
+			
+		Pizza pizza2 = factory.getPizza("Marguerita", "G");
+		pizza2.assar();
+		pizza2.empacotar();
 		
-		factory.getPizza(nome, tamanho);
+		System.out.println(" ");
+
+		Pizza pizza3 = factory.getPizza("Calabresa", "G");
+		pizza3.assar();
+		pizza3.empacotar();
 		
-		nome = "Marguerita";
-		tamanho = "G";
-		
-		factory.getPizza(nome, tamanho);
+		System.out.println(" ");
 	}
 }

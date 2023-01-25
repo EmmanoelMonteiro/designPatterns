@@ -19,16 +19,18 @@ public class FactoryPizza {
 				break;
 		}
 		
+		
+		
 		switch (nome) {
 			case "Portuguesa":
 				return new Portuguesa(fatias);
 			case "Marguerita":
 				return new Marguerita(fatias);	
 			default:
-				break;
+				System.out.println("Não temos esta Pizza! Aceita uma Marguerita?");
+				return new Marguerita(fatias);	
 		}
 		
-		return null;
 	}
 
 }
