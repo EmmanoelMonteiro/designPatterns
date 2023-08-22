@@ -7,16 +7,15 @@ import com.java.behavior.strategy.Imposto.after.*;
 public class TesteCalculadoraDeImpostos {
 
 	public static void main(String[] args) {
-		CalculadoraDeImpostos imp = new CalculadoraDeImpostos();
-		System.out.println(imp.calcular("IPI", 350));
 		
-//        CalculadoraDeImposto calculadora = new CalculadoraDeImposto();
-//        
-//        ICMS icms = new ICMS(100.0);
-//        IPI ipi = new IPI(100.0);
-//        
-//        System.out.println(calculadora.calcular(icms));
-//        System.out.println(calculadora.calcular(ipi));
+        CalculadoraDeImposto calculadora = new CalculadoraDeImposto();
+        
+        ICMS icms = new ICMS(100.0);
+        IPI ipi = new IPI(100.0);
+        
+        System.out.println(calculadora.calcular(icms));
+        System.out.println(calculadora.calcular(ipi));
+		
 	}
 
 }
