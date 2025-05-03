@@ -1,8 +1,6 @@
 package com.java.behavior.strategy.Imposto;
 
-import com.java.behavior.strategy.Imposto.before.*;
 import com.java.behavior.strategy.Imposto.after.*;
-
 
 public class TesteCalculadoraDeImpostos {
 
