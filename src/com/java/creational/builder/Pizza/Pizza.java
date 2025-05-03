@@ -2,8 +2,8 @@ package com.java.creational.builder.Pizza;
 
 public class Pizza {
 	
-	private String tamanho = "P";
-	private String sabor = "Queijo";
+	private String tamanho;
+	private String sabor;
 	
 	protected Pizza(){
 		
